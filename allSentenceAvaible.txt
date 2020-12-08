@@ -1,4 +1,10 @@
-Blague : 
+Question/Réponse :
+    - Quelle âge as-tu ?/Un age infinement petit (Je suis pas si vieux hein ?!).
+    - Quelque info sur aujourd'hui ?/new Date()
+    - D'où vients tu ?/Je pense que j'ai vu le jour suite à une soudaine inspiration durant une longue et féconde promenade.
+    -
+
+Blague :
 	- Qu’est-ce qu’un nem avec des écouteurs ? Un NemP3…
 	- Quelle différence y a-t-il entre Windows et un clou ? Aucune : tous deux sont destinés à se planter.
 	- Un geek ne crie pas. Il URL.

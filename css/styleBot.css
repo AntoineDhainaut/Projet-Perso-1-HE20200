@@ -1,0 +1,128 @@
+*{
+    font-family: Arial;
+    font-size: 17px;
+}
+
+section {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.styleForm {
+    border: 3px double #1e90ff;
+    border-radius: 40px;
+    background: #ffffff;
+    padding: 35px;
+    margin: auto;
+    width: 700px;
+}
+
+.styleResult {
+    border: 3px double #1e90ff;
+    border-radius: 40px;
+    background: #ffffff;
+    padding: 35px;
+    margin: auto;
+    width: 700px;
+}
+
+.styleList{
+    border: 3px double #1e90ff;
+    border-radius: 40px;
+    background: #ffffff;
+    padding: 35px;
+    margin: auto;
+    width: 700px;
+}
+
+.styleList ul{
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin-bottom: 4em;
+}
+
+.styleList ul ul{
+    margin: 0 0 0 2em;
+}
+
+.styleList li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: dodgerblue;
+    color: #444;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.styleList li:hover{
+    background: #FC756F;
+    text-decoration:none;
+    transform: scale(1.1);
+}
+
+.styleList li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #228b22;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    color:#FFF;
+}
+
+.styleButton1 {
+    box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+    background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+    background-color:#fc8d83;
+    border-radius:6px;
+    border:1px solid #d83526;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+}
+
+.styleButton1:hover {
+    background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+    background-color:#e4685d;
+}
+
+.styleButton1:active {
+    position:relative;
+    top:1px;
+}
+
+.styleInput1 {
+    padding: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 19px;
+    box-shadow: 2px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 0px rgba(66,66,66,.0);
+}
+.styleInput1:focus {
+    outline:none;
+}

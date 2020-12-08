@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Google Home Bot Easy</title>
     <link rel="stylesheet" href="css/styleNavbar.css" />
+    <link rel="stylesheet" href="css/styleBot.css"/>
     <script src="js/googleBot.js"></script>
 </head>
 <body>
@@ -15,26 +16,44 @@
             <li> <img src="img/logo.png"> </li>
             <li> <a href="index.html">Accueil</a> </li>
             <li> <a href="googleHomeBot.html">Google Home Bot</a> </li>
+            <li> <a href="allSentenceAvaible.html">Ma bliblihotèque de phrase</a> </li>
         </ul>
     </nav>
 </header>
 <br>
+
 <!-- FORM -->
 <section>
-    <form action="#" onSubmit="return recupEntrerForm(this)">
-        <fieldset>
-            <legend>Que voulez vous demander au bot. <a target="_blank" href="allSentenceAvaible.html">Toute les phrases/Questions sont disponible ici</a> </legend>
-            <label for="phraseValeur">Votre Phrase :</label>
-            <input type="text" id="phraseValeur" name="phraseValeur" required>
-            <input type="submit" value="Envoyer votre phrase">
-        </fieldset>
-    </form>
+    <div class="styleForm">
+        <form action="#" onSubmit="return recupEntrerForm(this); return false;">
+            <p>Que voulez vous demander au bot ?<br>
+                <a target="_blank" href="allSentenceAvaible.html">Toute les phrases/Questions sont disponible ici</a></p>
+            <label for="phraseValeur">Votre phrase/question :</label>
+            <input class="styleInput1" type="text" id="phraseValeur" name="phraseValeur" required>
+            <input class="styleButton1" type="submit" value="Envoyer">
+        </form>
+    </div>
 </section>
 <br>
+
 <!-- AFFICHAGE -->
 <section>
-<div id="affichageResultat"></div>
+    <div class="styleResult">
+        <h3>La réponse de Google Home Bot : </h3>
+        <div id="affichageResultat"></div>
+    </div>
 </section>
+<br>
+
+<section>
+    <div class="styleList">
+        <button type="button" onclick="afficherHisto()">Afficher L'historique</button>
+        <ul id="histo">
+
+        </ul>
+    </div>
+</section>
+<br>
 
 <!-- FOOTER -->
 <footer>
